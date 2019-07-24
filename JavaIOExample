@@ -1,0 +1,21 @@
+package schooolproject1;
+
+import java.util.Scanner;
+
+public class Example1 {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Please provide the information asked below: ");
+		System.out.println("Item Name: ");
+		String strItemName = in.next();
+		System.out.println("Quantity purchased: ");
+		int iQty = in.nextInt();
+		System.out.println("Item price: ");
+		double dPrice = in.nextDouble();
+		double dAmount = iQty * dPrice;
+		System.out.printf("Sales amount of %s is Rs. %.2f", strItemName, dAmount);
+		in.close();
+	}
+
+}
