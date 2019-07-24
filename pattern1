@@ -1,0 +1,26 @@
+package schooolproject1;
+
+import java.util.Scanner;
+
+public class Example2 {
+
+	public static void main(String[] args) {
+		int x = 1, y = 2, counter = 0, sum = 0;
+		String strOutput = "";
+		Scanner in = new Scanner(System.in);
+		System.out.print("Enter how many terms you want: ");
+		counter = in.nextInt();
+
+		for (int j = 0; j < counter; j++) {
+			strOutput = strOutput + " + (" + x + "*" + y + ")";
+			sum = sum + (x * y);
+			x = x + 1;
+			y = y + 1;
+		}
+		strOutput = strOutput.substring(3);
+		System.out.println(strOutput);
+		System.out.println("Sum: " + sum);
+		in.close();
+	}
+
+}
